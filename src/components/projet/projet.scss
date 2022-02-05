@@ -1,0 +1,137 @@
+.projet {
+   
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+      
+      font-family: Arial;
+      font-size: 58px;
+      font-weight: 900;
+      letter-spacing: -2px;
+      text-transform: uppercase;
+    font-weight: 700;
+      padding-top: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #303,  #ffff, #15023a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
+    overflow: hidden;
+   
+@keyframes shine {
+0% {
+  background-position-x: -500%;
+}
+100% {
+  background-position-x: 500%;
+}
+   
+}
+
+  }
+
+    .container {
+        // position: absolute;
+        height: 100%;
+        width: 100%;
+        left: calc(50% - 300px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+          
+.card {
+    display: flex;
+    height: 500px;
+    width: 600px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: outset 8px 8px 8px  rgba( 31, 38, 135, 0.37 ),
+    outset -8px -8px 8px;
+   
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background-image:linear-gradient(
+      rgba( 255, 255, 255, 0.18 )
+      );
+
+      a{
+        text-decoration: none;
+      }
+
+    transition: 0.4s ease-out;
+    position: relative;
+    left: -10px;
+    right: 40px;
+
+    .card-image {
+        
+      width: 150%;/*4*/
+        position: relative;/*2*/
+     
+
+        img{
+            width: 100%;
+            height: 50%;
+
+        }
+      }
+      .card-body {
+        text-align:center;  /*1*/
+      padding: 15px 20px; /*2*/
+      box-sizing: border-box; /*3*/
+      // backdrop-filter: blur( 2px );
+      // -webkit-backdrop-filter: blur( 2px );
+    }
+  }
+
+  .card-excerpt{
+    img{
+      height: 5px;
+      width: 25px;
+      border-radius: 70%;
+      object-fit: cover;
+
+    }
+  }
+
+
+  
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.2s ease-out;
+ 
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.2s ease-out;
+}
+
+
+  
+
+
+  
+
+
+
+
+ }
+
+    
+  
+    
+            
+}
+

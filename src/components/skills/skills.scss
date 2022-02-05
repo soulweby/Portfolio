@@ -1,0 +1,48 @@
+
+.timeline{
+    display:flex;
+
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  .hob{
+      overflow: hidden;
+    h2{
+
+        overflow: hidden;   
+        font-family: Arial;
+        font-size: 58px;
+        font-weight: 900;
+        letter-spacing: -2px;
+        text-transform: uppercase;
+      font-weight: 700;
+        padding-top: 45px;
+        padding-bottom: 45px;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #303, #fff, #15023a);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 80%;
+      animation: shine 5s linear infinite;
+      position: relative;
+      
+     
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+     
+}
+
+        }
+  }
+    
+}

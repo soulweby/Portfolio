@@ -1,0 +1,26 @@
+.app {
+
+    height: 100vh;
+    // background-color: #a9c9ff;
+    // background-color: white;
+    background-image: linear-gradient(45deg, #a9c9ff 0%, #303 100%);
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px);
+        position: relative;
+        top: 70px;
+        scroll-behavior:  smooth;
+        scroll-snap-type: y mandatory ;
+        scrollbar-width: none;
+        &::-webkit-scrollbar{
+
+            display: none;
+        }
+
+        > *{
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+        }
+    }
+}
